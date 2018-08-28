@@ -16,8 +16,6 @@ public class BaseApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
-        // DAGGER 2
-        // if you get a "deprecated" warning, it is intended to notify you of unused methods and modules.
         applicationComponent = DaggerApplicationComponent.builder()
                 .applicationModule(new ApplicationModule(this))
                 .networkModule(new NetworkModule(BuildConfig.BASE_API_ENDPOINT,BuildConfig.OPENWEATHER_API_KEY))
