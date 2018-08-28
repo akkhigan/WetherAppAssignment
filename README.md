@@ -1,7 +1,7 @@
-# weather App Assignment to show 5 days forecast
+# Weather App Assignment to show weather forecast for the upcoming 5 days
 
-Weather App
+Weather Forcasting API for city of London
 
-
+http://api.openweathermap.org/data/2.5/forecast/city?id=524901&APPID=<YOUR_APP_ID>
 
 

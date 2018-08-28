@@ -9,7 +9,6 @@ import okhttp3.Response;
 
 /**
  * Interceptor to add authentication to all requests.
- *
  */
 
 public class AuthenticationInterceptor implements Interceptor {
