@@ -17,7 +17,7 @@ android {
             minifyEnabled false
             buildConfigField "boolean", "ENABLE_LOGS", "true"
             buildConfigField 'String', 'BASE_API_ENDPOINT', '"http://api.openweathermap.org/data/2.5/forecast/"'
-            buildConfigField 'String', 'OPENWEATHER_API_KEY', '"a0902dd1f56ef7c6fe785a3acd9e08e5"'
+            buildConfigField 'String', 'OPENWEATHER_API_KEY', '"Your API Key"'
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
 
@@ -25,7 +25,7 @@ android {
             minifyEnabled true
             buildConfigField "boolean", "ENABLE_LOGS", "false"
             buildConfigField 'String', 'BASE_API_ENDPOINT', '"http://api.openweathermap.org/data/2.5/forecast/"'
-            buildConfigField 'String', 'OPENWEATHER_API_KEY', '"a0902dd1f56ef7c6fe785a3acd9e08e5"'
+            buildConfigField 'String', 'OPENWEATHER_API_KEY', '"Your API key"'
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
 
