@@ -17,7 +17,7 @@ android {
             minifyEnabled false
             buildConfigField "boolean", "ENABLE_LOGS", "true"
             buildConfigField 'String', 'BASE_API_ENDPOINT', '"http://api.openweathermap.org/data/2.5/forecast/"'
-            buildConfigField 'String', 'OPENWEATHER_API_KEY', '"Your API Key"'
+            buildConfigField 'String', 'OPENWEATHER_API_KEY', '"Your Debug API Key"'
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
 
@@ -25,7 +25,7 @@ android {
             minifyEnabled true
             buildConfigField "boolean", "ENABLE_LOGS", "false"
             buildConfigField 'String', 'BASE_API_ENDPOINT', '"http://api.openweathermap.org/data/2.5/forecast/"'
-            buildConfigField 'String', 'OPENWEATHER_API_KEY', '"Your API key"'
+            buildConfigField 'String', 'OPENWEATHER_API_KEY', '"Your Release API key"'
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
 
@@ -77,7 +77,6 @@ dependencies {
     compile "com.github.aurae.retrofit2:converter-logansquare:$LOGANSQUARE_RETROFIT_CONVERTER_VERSION"
 
     // Batterknife - Bind Android views and callbacks to fields and methods. http://jakewharton.github.io/butterknife/
-    // Warning: apt command  rom the android-apt plugin was used in android studio < 2.2
     compile "com.jakewharton:butterknife:$BUTTERKNIFE_VERSION"
     annotationProcessor "com.jakewharton:butterknife-compiler:$BUTTERKNIFE_VERSION"
 
@@ -88,11 +87,8 @@ dependencies {
     compile "com.squareup.retrofit2:adapter-rxjava:$RX_RETROFIT_ADAPTER_VERSION"
 
     // Dagger2 - fully static compilation-time dependency injection framework. See https://google.github.io/dagger/
-    // Warning: apt command from the android-apt plugin was used in android studio < 2.2
     compile "com.google.dagger:dagger:$DAGGER_VERSION"
     annotationProcessor "com.google.dagger:dagger-compiler:$DAGGER_VERSION"
-
-
 
 
 }

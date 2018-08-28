@@ -14,7 +14,7 @@ import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import rx.observers.TestSubscriber;
 
 /**
- * Use mock server to test authentication interceptor. Here just a simple test that the API_KET is present, can be improved.
+ * Use mock server to test authentication interceptor. Here just a simple test that the API_KEY is present, can be improved.
  */
 
 public class WeatherServiceTest {
@@ -47,7 +47,7 @@ public class WeatherServiceTest {
 
         TestSubscriber<WeatherResponse> testSubscriber = new TestSubscriber<>();
 
-        mockWebServer.enqueue(new MockResponse().setBody("{\"city\":{\"id\":524901,\"name\":\"Moscow\"}}")); // very basic response mocked, we can store the tntire response
+        mockWebServer.enqueue(new MockResponse().setBody("{\"city\":{\"id\":524901,\"name\":\"Moscow\"}}")); // very basic response mocked, we can store the entire response
 
         WeatherService service = retrofit.create(WeatherService.class);
         service.fetchWeatherForecasts(23).subscribe(testSubscriber);
