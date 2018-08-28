@@ -1,4 +1,6 @@
-# Weather App Assignment to show weather forecast for the upcoming 5 days
+## Wether App Assignment
+
+Weather App Assignment to show weather forecast for the upcoming 5 days
 
 Weather Forcasting API for city of London
 
