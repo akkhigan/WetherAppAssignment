@@ -11,6 +11,6 @@ import rx.Observable;
  */
 
 public interface WeatherService {
-    @GET("city")
+    @GET("forecast")
     Observable<WeatherResponse> fetchWeatherForecasts(@Query("id") long id);
 }

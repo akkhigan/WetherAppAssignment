@@ -18,31 +18,36 @@
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/title" />
+        android:text="@string/title"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"/>
 
     <TextView
         android:id="@+id/scroll_message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/scroll_message" />
+        android:text="@string/scroll_message"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"/>
 
     <TextView
         android:id="@+id/town"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="" />
+        android:text=""
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"/>
 
 
     <TextView
         android:id="@+id/error"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/error" />
+        android:text="@string/error"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"/>
 
     <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/swipe_refresh_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/padding">
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recycleview"

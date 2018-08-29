@@ -4,4 +4,5 @@
     <string name="error">An error occur. Swipe to refresh</string>
     <string name="title">Weather app. Forecast for the next 5 days</string>
     <string name="scroll_message">Scroll to refresh</string>
+    <string name="town">Town : %1$s </string>
 </resources>

@@ -17,7 +17,7 @@ public class Formatter {
     public String formattedDateFromString(String inputDate){
 
         SimpleDateFormat df_input = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss", Locale.UK);
-        SimpleDateFormat df_output = new SimpleDateFormat( "EEEE d MMMM yyyy", Locale.UK);
+        SimpleDateFormat df_output = new SimpleDateFormat( "EEEE d MMMM yyyy hh:mm", Locale.UK);
 
         Date parsed = null;
         String outputDate = "";

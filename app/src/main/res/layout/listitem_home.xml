@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="3"
         android:layout_width="0dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginRight="10dp"
         />
 
     <TextView
@@ -24,8 +24,9 @@
     <TextView
         android:id="@+id/listitem_home_temperature"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:layout_width="0dp"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
      />
 
 

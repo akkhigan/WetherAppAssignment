@@ -12,8 +12,6 @@ import rx.Subscriber;
 
 public class HomePresenterImpl extends BasePresenter<HomeContract.HomeView> implements HomeContract.HomePresenter {
 
-    private static final String LOG_TAG = "HomePresenterImpl";
-
     @Inject
     Repository repository;
 
