@@ -22,16 +22,16 @@ https://openweathermap.org/appid
 
 This application code is developed and implemented to provide 3-tier architecturewith below layers.
 
-## data layer:
+### data layer:
 This layer is responsible to offer multiple data sources, both remotely (network requests) and locally (share pref, files, database, etc for caching and offline support). Currently, only the network request is supported
 
-## domain/business layer:
+### domain/business layer:
 This layer interacts with the data layer via repositories provided in this package, to allow separation of concerns, decouple network/database models from view models and provide mapping/filters/chain of network request etc when needed<br/><br/>
 
-## presentation layer:
+### presentation layer:
 This layer is responsibile of handling the UI. Our presentation layer is organised by user cases (eg, home) and it follows MVP pattern. Basic classes to handle the view-presenter binding are provided in the base sub-package
 
-## MVP
+### MVP
 
 Model–view–presenter (MVP) is a derivation of the model–view–controller (MVC) architectural pattern which mostly used for building user interfaces. In MVP, the presenter assumes the functionality of the “middle-man”. All presentation logic is pushed to the presenter. MVP advocates separating business and persistence logic out of the Activity.<br/>
 
@@ -41,7 +41,7 @@ Presenter Java class, that handles all the business logic of the view. Ideally, 
 Model classes: the model storing data for the view. this should not be confused with the pojo classes in the network layer</br>
 Additional android classes (adapters, etc)
 
-#Libraries
+# Libraries
 
 ### Dagger2 :
 Dependency injection framework (does not use reflection). While its surely true that dependecy injection can be achieve without using any DI framework, dagger2 makes things easier without performance penalities at runtime. For example, it's easy with dagger to expose scheduler threads and replace them for unit tests.  <br/><br/>
@@ -55,7 +55,7 @@ This is one of the Json decoder library which is a fast json decoder/serialiser.
 This is to just to remove some boilerplate of findViewById code
 
 
-#Improvements
+# Improvements
 
 As per given time lines I have concentrated mostly on application design, archtecture and integrating required third party libraries.<br/>
 <b> UI/UX Design and experience:</b> I am currently implemented a simple UI with recycular view. But it can be  more efficient with advanced UI using Constraint Layouts and Meterial design etc<br/>
